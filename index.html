@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./libs/v6.0.0-dist/ol.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-1">
+      <div class="column-navigation">
+        <a title='Home' id='Home' class='active'><i class="fas fa-home" id='Home'></i></a>
+        <a title='Vancouver' id='Vancouver'><i class="far fa-circle" id='Vancouver'></i></a>
+        <a title='Toronto' id='Toronto'><i class="far fa-circle" id='Toronto'></i></a>
+        <a title='LosAngles' id='LosAngles'><i class="far fa-circle" id='LosAngles'></i></a>
+        <a title='NewYork' id='NewYork'><i class="far fa-circle" id='NewYork'></i></a>
+        <a title='Chicago' id='Chicago'><i class="far fa-circle" id='Chicago'></i></a>
+        <a title='Houston' id='Houston'><i class="far fa-circle" id='Houston'></i></a>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="column-map" id='openlayers-map'></div>
+    </div>
+
+    <div class="grid-3">
+      <div class="column-menu" id='menu-information'>
+        <p id='cityname'>Starfleet Intel Identification - Demonstration</p>
+        <img id='cityimage' src="./data/City_images/starfleet_Image.jpg" alt="Starfleet_launch">
+      </div>
+    </div>
+  </div>
+
+  <div class="popover-information">
+    <p id='popover-text'></p>
+  </div>
+ 
+  <script src="https://kit.fontawesome.com/87de6d84f0.js" crossorigin="anonymous"></script>
+  <script src='./libs/v6.0.0-dist/ol.js'></script>
+  <script src='./main.js'></script>
+</body>
+</html>
